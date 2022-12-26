@@ -1,17 +1,19 @@
+import os
+
 from kivymd.app import MDApp
-from langdetect import detect
-import translators as ts
 from kivymd.uix.menu import MDDropdownMenu
 
 import speech_recognition as sr
+import easyocr
+
 from gtts import gTTS
 from playsound import playsound
 
+from langdetect import detect
+import translators as ts
+
 from tkinter import filedialog as fd
 from tkinter import messagebox
-
-import easyocr
-import os
 
 
 class TextHandler():
